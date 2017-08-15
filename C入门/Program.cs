@@ -15,23 +15,23 @@ namespace C入门
            animalArray[0] = myCow1;
            animalArray[1] = new Chicken("Ken");
            foreach (animal myAnimal in animalArray)
-         {
-          Console.WriteLine("New {0} object added to Array collection, " +"Name = {1}", myAnimal.ToString(), myAnimal.Name);
-         }
+          {
+            Console.WriteLine("New {0} object added to Array collection, " +"Name = {1}", myAnimal.ToString(), myAnimal.Name);
+          }
           Console.WriteLine("Array collection contains {0} objects.",
           animalArray.Length);
           animalArray[0].Feed();
-         ((Chicken)animalArray[1]).LayEgg();
-         Console.WriteLine();
-         Console.WriteLine("Create an ArrayList type collection of Animal " +"objects and use it:");
-         ArrayList animalArrayList = new ArrayList();
-         cow myCow2 = new cow("Hayley");
+          ((Chicken)animalArray[1]).LayEgg();
+          Console.WriteLine();
+          Console.WriteLine("Create an ArrayList type collection of Animal " +"objects and use it:");
+          ArrayList animalArrayList = new ArrayList();
+          cow myCow2 = new cow("Hayley");
          animalArrayList.Add(myCow2);
          animalArrayList.Add(new Chicken("Roy"));
          foreach (animal myAnimal in animalArrayList)
-         {
+        {
            Console.WriteLine("New {0} object added to ArrayList collection," +" Name = {1}", myAnimal.ToString(), myAnimal.Name);
-          }
+        }
           Console.WriteLine("ArrayList collection contains {0} objects.",animalArrayList.Count);
          ((animal)animalArrayList[0]).Feed();
          ((Chicken)animalArrayList[1]).LayEgg();
@@ -46,8 +46,7 @@ namespace C入门
           myCow1.Name = "Janice";
           Console.WriteLine("The animal is now called {0}.",
           ((animal)animalArrayList[1]).Name);
-
-
+            /*
           double firstNumber, secondNumber;
           String userName;
           Console.WriteLine("ENTER your name");
@@ -70,7 +69,24 @@ namespace C入门
           Console.WriteLine("integer less than 10?{0}", isLessthan10);
           Console.WriteLine("integer between 0 and 5?{0}", isBetweenOAnd5);
           Console.WriteLine("Exactly one of the above is true?{0}",isLessthan10^isBetweenOAnd5);
+         
+             */
+          string comparison;
+          Console.WriteLine("enter a number:");
+          double var1 = Convert.ToDouble(Console.ReadLine());
+          Console.WriteLine("enter another number:");
+          double var2 = Convert.ToDouble(Console.ReadLine());
+          if (var1 < var2)
+              comparison = "less than";
+          else
+          {
+              if (var1 == var2)
+                  comparison = "equal to";
+              else
+                  comparison = "qreater than";
+          }
+          Console.WriteLine("the first number is {0} the second:", comparison);
           Console.ReadKey();
         }
-}
+    }
 }
