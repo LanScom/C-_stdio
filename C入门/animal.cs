@@ -23,7 +23,7 @@ namespace C入门
     {
         name = newNme;
      }
-    public void feed()
+    public void Feed()
     {
         Console.WriteLine("{0}has been fed",name);
     }
