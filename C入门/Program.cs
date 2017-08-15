@@ -46,6 +46,8 @@ namespace C入门
           myCow1.Name = "Janice";
           Console.WriteLine("The animal is now called {0}.",
           ((animal)animalArrayList[1]).Name);
+
+
           double firstNumber, secondNumber;
           String userName;
           Console.WriteLine("ENTER your name");
@@ -60,7 +62,15 @@ namespace C入门
           Console.WriteLine("the product of{0} and {1}is{2}", firstNumber, secondNumber, firstNumber *secondNumber);
           Console.WriteLine("the result of dividing{0} by {1} is{2}", firstNumber, secondNumber, firstNumber * secondNumber);
           Console.WriteLine("the remainder after dividing {0}by{1}is{2}.", firstNumber, secondNumber, firstNumber % secondNumber);
+
+          Console.WriteLine("Enter an integer:");
+          int myInt = Convert.ToInt32(Console.ReadLine());
+          bool isLessthan10 = myInt < 10;
+          bool isBetweenOAnd5=(0<=myInt)&&(myInt<=5);
+          Console.WriteLine("integer less than 10?{0}", isLessthan10);
+          Console.WriteLine("integer between 0 and 5?{0}", isBetweenOAnd5);
+          Console.WriteLine("Exactly one of the above is true?{0}",isLessthan10^isBetweenOAnd5);
           Console.ReadKey();
-}
+        }
 }
 }
