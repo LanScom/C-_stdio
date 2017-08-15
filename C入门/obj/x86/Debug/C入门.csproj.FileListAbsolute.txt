@@ -1,0 +1,5 @@
+D:\工程文件\C#控制台\C入门\C入门\bin\Debug\C入门.exe
+D:\工程文件\C#控制台\C入门\C入门\bin\Debug\C入门.pdb
+D:\工程文件\C#控制台\C入门\C入门\obj\x86\Debug\C入门.csprojResolveAssemblyReference.cache
+D:\工程文件\C#控制台\C入门\C入门\obj\x86\Debug\C入门.exe
+D:\工程文件\C#控制台\C入门\C入门\obj\x86\Debug\C入门.pdb

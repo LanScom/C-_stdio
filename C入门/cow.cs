@@ -11,8 +11,7 @@ namespace C入门
         {
             Console.WriteLine("{0}HashSet been milked", name);
         }
-       public cow(string newName)
-           : base(newName)
+       public cow(string newName): base(newName)
        {
 
        }
