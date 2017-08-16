@@ -45,6 +45,15 @@ namespace C入门
             myCow1.Name = "Janice";
             Console.WriteLine("The animal is now called {0}.",
             ((animal)animalArrayList[1]).Name);
+            string myString = "This is a test.";
+            char[] separator = { ' ' };
+            string[] myWords;
+            myWords = myString.Split(separator);
+            foreach (string word in myWords)
+            {
+                Console.WriteLine("{0}", word);
+            }
+           
             Console.ReadKey();
 }
 }
