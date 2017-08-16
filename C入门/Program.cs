@@ -69,7 +69,6 @@ namespace C入门
           Console.WriteLine("integer less than 10?{0}", isLessthan10);
           Console.WriteLine("integer between 0 and 5?{0}", isBetweenOAnd5);
           Console.WriteLine("Exactly one of the above is true?{0}",isLessthan10^isBetweenOAnd5);
-         
              */
           string comparison;
           Console.WriteLine("enter a number:");
@@ -86,7 +85,27 @@ namespace C入门
                   comparison = "qreater than";
           }
           Console.WriteLine("the first number is {0} the second:", comparison);
-          Console.ReadKey();
+          int[][] divisors1to10 ={
+                                   new int[]{1},
+                                   new int[]{1,2},
+                                   new int[]{1,3},
+                                   new int[]{1,2,4},
+                                   new int[]{1,5},
+                                   new int[]{1,2,3,6},
+                                   new int[]{1,7},
+                                   new int[]{1,2,4,8},
+                                   new int[]{1,3,9},
+                                  new int[]{1,2,5,10}
+                               };
+          foreach (int[] divisorsofInt in divisors1to10)
+          {
+              foreach (int divisor in divisorsofInt)
+              {
+                  Console.WriteLine(divisor);
+              }
+          }
+            Console.ReadKey();
         }
+
     }
 }
