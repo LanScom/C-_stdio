@@ -8,6 +8,15 @@ namespace C入门
 {
     class Program
     {
+        delegate Double processDelegate(double param1, double param2);
+        static double multiply(double param1, double param2)
+        {
+            return param1 * param2;
+        }
+        static double divide(double param1, double param2)
+        {
+            return param1 / param2;
+        }
         static void Main(string[] args)
         {
           Console.WriteLine("Create an Array type collection of Animal " +"objects and use it:");
@@ -53,7 +62,19 @@ namespace C入门
             {
                 Console.WriteLine("{0}", word);
             }
-           
+            processDelegate process;
+            Console.WriteLine("Enter 2 numbers separated with a comma:");
+            string input = Console.ReadLine();
+            int commaPos = input.IndexOf(',');
+            double param1 = Convert.ToDouble(input.Substring(0, commaPos));
+            double param2 = Convert.ToDouble(input.Substring(commaPos + 1, input.Length - commaPos - 1));
+            Console.WriteLine("Enter M to multiply or D to divide:");
+            input = Console.ReadLine();
+            if (input == "M")
+                process = new processDelegate(multiply);
+            else
+                process = new processDelegate(divide);
+            Console.WriteLine("result:{0}", process(param1, param2));
             Console.ReadKey();
 }
 }
